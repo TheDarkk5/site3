@@ -1,0 +1,65 @@
+code
+{
+background: #73bcec;
+color: #fff;
+font-size: 2rem;
+border: 2px solid #060bfa;
+display: block;
+text-align: center;
+
+}
+
+section
+{
+width: 27%;
+height: 400px;
+border: 2px solid #060bfa;
+float : left;
+border-radius: 6px;
+margin: 12px 1.5% 24px 1.5%; 
+}
+
+header
+{
+margin-top: 1em;
+margin-bottom: 1em;
+}
+
+footer
+{
+clear: both;
+
+}
+
+h1
+{
+text-align: justify;
+padding: 8px;	
+}
+
+
+.c1
+{
+color: red;
+
+}
+
+.h1
+{
+
+}
+
+.h2
+{
+
+}
+
+.S1
+{
+background: orange;
+}
+
+.s2
+{
+background: yellow;	
+}

@@ -1,0 +1,23 @@
+div
+{
+border: 2px solid #f00020;
+border-radius: 6px;
+padding: 10px;	
+}
+
+article
+{
+border: 2px solid #f00020;
+border-radius: 6px;
+padding: 10px;	
+}
+
+.a1
+{
+background-color: pink;	
+}
+
+.a2
+{
+background-color: grey;	
+}
