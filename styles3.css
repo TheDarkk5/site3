@@ -1,0 +1,44 @@
+table { /* définition générale du style du tableau */
+	border:3px solid #6495ed; /* bordure du tableau : épaisseur, continue/pointillée (dotted), couleur */
+	/*  border-collapse:collapse;   /* option qui fusionne les bordures du tableau aux bordures de cellules */
+	width:60%; /* largeur du tableau dans la page */
+	margin:auto; /* marges automatiques : centrage par défaut */
+	background-color: #D0E3FA;
+}
+
+tr{ /* table row : ligne de tableau */
+	height: 50px;	/* hauteur de ligne */
+
+}
+
+th { /* table header : 1ere ligne du tableau */
+	font-family: monospace; 
+	font-size: 1.20em; /* 80% de la taille standard */
+	text-align: center;  /* centrage */
+	border: 1px solid #000099; /* bordure du table header */
+	width: 50%;				/* largeur  : implique qu'il y ait 2 cellules TH côte à côte (ou un rowspan ='2')*/
+	padding: 5px;			/* marge interne  : peut être spécifiée différente au dessus et en dessous
+						Avec padding-top: vous pouvez spécifier l'espace entre le contenu de l'élément et sa limite supérieure, etc. */
+	background-color: #D0E3FA;
+	background-image: url('sky.jpg'); /* fond pour les cellules th */
+}
+
+
+td { /* table division : division de tableau, autrement dit "cellule" */
+	font-family: verdana, sans-serif;
+	font-size: 0.80em; /* 80% de la taille standard */
+	border: 1px solid #6495ed;
+	width: 50%; /* suppose 2 colonnes */
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle; /*qui peut prendre les valeurs :  baseline | top | middle */
+	background-color: #ffffff;
+}
+
+h1 { 		/* définit  les titres H1 */
+	font-family: Arial, "sans serif";
+	font-size: 2em;		/* 200% de la taille standard */
+	color: #000099; /* couleur du texte pour cette classe */
+	text-align: center;
+	margin: 20px;
+	}
