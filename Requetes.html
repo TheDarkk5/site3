@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+requete 1 :<br><br>
+
+select *<br>
+from voitures<br><br>
+
+requte 2 : <br><br>
+
+select *<br>
+from voitures<br>
+order by immatriculation<br><br>
+
+requete 3 : <br><br>
+
+SELECT *<br>
+FROM voitures<br>
+ORDER BY marque, modele<br><br>
+
+requete 4 :<br><br>
+
+select * <br>
+from voitures<br>
+where marque="Tesla"<br><br>
+
+requete 5 :<br><br>
+
+select lower(marque),lower(modele)<br>
+from voitures<br>
+where marque="Tesla"<br><br>
+
+requete 6 : <br><br>
+
+SELECT UPPER( marque ) , UPPER( modele )<br>
+FROM voitures<br>
+WHERE marque = "Tesla"<br><br>
+
+requete 7 :<br><br>
+
+ALTER TABLE voitures<br>
+ADD prix_achat VARCHAR(100)<br><br>
+
+requete 8 :<br><br>
+
+Select *<br>
+from voitures<br>
+Where prix_achat between 15000 and 20000<br><br>
+
+Select *<br>
+from voitures<br>
+where prix_achat<20000 and prix_achat>15000<br><br>
+
+requete 9 :<br><br>
+
+select AVG (kilometrage)<br>
+from voitures<br>
+where marque = "mercedes"<br><br>
+
+requete 10 :<br><br>
+
+select count(*)<br>
+from voitures<br>
+where marque = "tesla"<br><br>
+
+requete 11 :<br><br>
+
+select count(*)<br>
+from voitures <br>
+where couleur = "noire"<br><br>
+
+requete 12 :<br><br>
+
+select count(*)<br>
+from voitures<br>
+group by marque<br><br>
+
+select marque, count(*)<br>
+from voitures<br>
+group by marque<br><br>
+
+requete 13 :<br><br>
+
+select max(kilometrage)<br>
+from voitures<br><br>
+
+requete 14 :<br><br>
+
+select marque, modele, immatriculation<br>
+from voitures<br>
+where kilometrage =(select max(kilometrage) from voitures);<br><br>
+
+requete 15 :<br><br>
+
+
+select marque, modele, immatriculation<br>
+from voitures<br>
+where kilometrage =(select min(kilometrage) from voitures);<br><br>
+
+requete 16 :<br><br>
+
+select *<br>
+from clients<br>
+where ville ="Paris" or ville="Nice"<br><br>
+
+requete 17 :<br><br>
+
+select SUM (prix_achat)<br>
+from voitures<br>
+where marque ="mercedes"<br><br>
+
+</body>
+</html>

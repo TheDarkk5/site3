@@ -1,33 +1,70 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  "http://www.w3.org/TR/html4/loose.dtd">
-<!-- ce DOCTYPE est nécessaire avec IE pour les marges automatiques -->
+<!DOCTYPE html>
 <html>
-
 <head>
- <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
- <meta NAME="description" CONTENT="Exemple de tableaux avec feuille de style">
- <meta NAME="keywords" LANG="fr" CONTENT="html,styles,css">
- <meta NAME="Author" CONTENT="Grégoire Maréchal">
-<title>Tableau avec style</title>
-<!-- appel de la feuille de style externe -->
- <link href="styles3.css" type="text/css" rel="stylesheet" media="all">
+	<title></title>
 </head>
+<body>
 
-	<body>
-	<h1>Exemple basique de tableau</h1>
-		<table>
-			<tr>
-				<th>Année 2011</th>
-				<th>Année 2012</th>
-			</tr>
-			<tr>
-				<td>100</td>
-				<td>200</td>
-			</tr>
-		</table>
+1) <br><br>
+
+select *<br>
+from employee<br>
+where First_name like "b%"<br><br>
+
+2)<br><br>
+
+select *<br>
+from employee<br>
+where First_name like "%o%"<br><br>
+
+3)<br><br>
+
+select *<br>
+from employee<br>
+where First_name like "%n"<br><br>
+
+4)<br><br>
+
+select *<br>
+from employee<br>
+where First_name like "___n"<br><br>
+
+5)<br><br>
+
+select *<br>
+from employee<br>
+where First_name like "j___"<br><br>
+
+6)<br><br>
+
+select *<br>
+from employee<br>
+where Salary>3000000<br><br>
+
+7)<br><br>
+
+select *<br>
+from employee<br>
+where Salary<3000000 and departement = "Finance"<br><br>
+
+8)<br><br>
+
+select *<br>
+from employee<br>
+where Salary between 2000000 and 5000000<br><br>
 
 
-	</body>
+9)<br><br>
+
+select *<br>
+from employee<br>
+where First_name = "bob" or "alex"<br><br>
+
+10)<br><br>
+
+select *<br>
+from employee <br>
+where YEAR(Joining_date) =2019<br><br>
+
+</body>
 </html>
-
-
-	
